@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desi Romano — Comunicación estratégica para mujeres del vino</title>
+<meta name="description" content="Copywriter especializada en mujeres del mundo del vino. Asesoría de voz de marca, seguimiento post-evento y copy web para sommeliers, enólogas y bodegueras.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  :root {
+    --crema: #FAF6F0;
+    --grafito: #2C2C2C;
+    --borgona: #66273b;
+    --rosa: #fb6376;
+    --arena: #F3DAEF;
+    --blanco: #ffffff;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--crema);
+    color: var(--grafito);
+    font-size: 18px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  img { max-width: 100%; display: block; }
+
+  a { color: inherit; }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1rem 5vw;
+    background: rgba(250,246,240,0.94);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--arena);
+  }
+
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--grafito);
+    text-decoration: none;
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--grafito);
+    text-decoration: none;
+  }
+  .nav-link:hover { color: var(--borgona); }
+
+  .nav-social { display: flex; gap: 0.9rem; align-items: center; }
+  .nav-social a { color: var(--borgona); display: flex; }
+
+  .nav-cta {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--borgona);
+    text-decoration: none;
+    border-bottom: 1px solid var(--borgona);
+    padding-bottom: 2px;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+  .nav-cta:hover { color: var(--rosa); border-color: var(--rosa); }
+
+  .nav-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    color: var(--grafito);
+    cursor: pointer;
+  }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 5rem;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 5vw 6rem 7vw;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: var(--borgona);
+    margin-bottom: 2rem;
+  }
+
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.6rem, 4.8vw, 4rem);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--grafito);
+    margin-bottom: 1.75rem;
+    max-width: 560px;
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: var(--borgona);
+  }
+
+  .hero-body {
+    font-size: 1.08rem;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #555;
+    max-width: 460px;
+    margin-bottom: 2rem;
+  }
+
+  .hero-divider {
+    width: 40px;
+    height: 1px;
+    background: var(--borgona);
+    margin-bottom: 2rem;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    background: var(--borgona);
+    color: var(--crema);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    transition: background 0.25s;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-primary:hover { background: #4e1f2d; }
+
+  .btn-outline {
+    display: inline-block;
+    border: 1px solid var(--borgona);
+    color: var(--borgona);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    padding: 0.95rem 2.4rem;
+    transition: background 0.25s, color 0.25s;
+  }
+  .btn-outline:hover { background: var(--borgona); color: var(--crema); }
+
+  .hero-note {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 1.75rem;
+    max-width: 420px;
+    line-height: 1.6;
+  }
+
+  .hero-right {
+    position: relative;
+    overflow: hidden;
+    background: #e8ddd0;
+  }
+
+  .hero-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .hero-right-overlay {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 2rem;
+    right: 2rem;
+    background: rgba(250,246,240,0.94);
+    padding: 1.5rem 2rem;
+    border-left: 3px solid var(--borgona);
+  }
+
+  .hero-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--grafito);
+  }
+
+  /* ── SECTION GENERAL ── */
+  section { position: relative; }
+
+  .section-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--borgona);
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(.22,.61,.36,1), transform 0.7s cubic-bezier(.22,.61,.36,1);
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  .label-reveal {
+    opacity: 0;
+    transform: translateX(-18px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+  }
+  .label-reveal.visible { opacity: 1; transform: translateX(0); }
+
+  /* Pull quote — used across sections, background-aware via modifier classes */
+  .pull-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.75rem;
+    font-style: italic;
+    line-height: 1.6;
+    border-left: 2px solid var(--borgona);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    color: var(--grafito);
+  }
+  .pull-quote.on-dark { border-left-color: var(--rosa); color: var(--crema); }
+
+  /* ── PROBLEMA ── */
+  #problema {
+    background: var(--grafito);
+    color: var(--crema);
+    padding: 7rem 7vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  #problema .section-label { color: var(--rosa); }
+
+  #problema h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 3.8vw, 3rem);
+    font-weight: 300;
+    line-height: 1.2;
+    color: var(--crema);
+  }
+
+  #problema h2 em { font-style: italic; color: var(--rosa); }
+
+  .problema-right p {
+    font-size: 1.75rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #c8bdb5;
+    margin-bottom: 1.4rem;
+  }
+
+  /* ── MARQUEE ── */
+  .marquee-wrap {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 1.1rem 0;
+    border-top: 1px solid var(--arena);
+    border-bottom: 1px solid var(--arena);
+  }
+  .marquee-track { display: inline-block; animation: marquee 24s linear infinite; }
+  .marquee-track span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.05rem, 1.9vw, 1.35rem);
+    font-style: italic;
+    color: var(--borgona);
+    padding-right: 3.5rem;
+  }
+  .marquee-track span::after { content: '·'; padding-left: 3.5rem; color: var(--arena); }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* ── MIRADA (Esta soy yo) ── */
+  #mirada {
+    padding: 7rem 7vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .mirada-img-wrap { position: relative; }
+  .mirada-img-wrap img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    background: #e8ddd0;
+  }
+  .mirada-img-caption {
+    position: absolute;
+    bottom: -1px; left: 0; right: 0;
+    background: var(--borgona);
+    color: var(--crema);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+  }
+
+  .mirada-right h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 3.3vw, 2.8rem);
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  .mirada-right h2 em { font-style: italic; color: var(--borgona); }
+  .mirada-right p {
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.85;
+    color: #555;
+    margin-bottom: 1.25rem;
+  }
+
+  /* ── COMO AYUDO ── */
+  #como-ayudo {
+    background: var(--arena);
+    padding: 6rem 7vw;
+    text-align: center;
+  }
+  #como-ayudo .section-label { text-align: center; }
+  #como-ayudo h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.9rem, 3.4vw, 2.7rem);
+    font-weight: 300;
+    line-height: 1.2;
+    max-width: 700px;
+    margin: 0 auto 3.5rem;
+  }
+  #como-ayudo h2 em { font-style: italic; color: var(--borgona); }
+
+  .ayudo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .ayudo-card { text-align: left; }
+  .ayudo-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--borgona);
+    margin-bottom: 0.6rem;
+  }
+  .ayudo-card p { font-size: 0.98rem; color: #555; line-height: 1.7; }
+
+  /* ── SERVICIO 1: ASESORÍA ── */
+  #servicio1 {
+    padding: 7rem 7vw;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .serv-tag {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--borgona);
+    color: var(--crema);
+    padding: 0.4rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  #servicio1 h2, #servicio-etiqueta h2, #servicio2 h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.9rem, 3.3vw, 2.8rem);
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  #servicio1 h2 em, #servicio-etiqueta h2 em, #servicio2 h2 em { font-style: italic; color: var(--borgona); }
+
+  .serv-lead {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.85;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+
+  .serv-tags-list { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2.5rem; }
+  .serv-tag-item {
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    border: 1px solid var(--borgona);
+    color: var(--borgona);
+    padding: 0.4rem 1rem;
+  }
+
+  .serv-right-img { position: sticky; top: 7rem; }
+  .serv-right-img img { width: 100%; aspect-ratio: 3/4; object-fit: cover; background: #e8ddd0; }
+
+  .serv-accent-text {
+    background: var(--borgona);
+    color: var(--crema);
+    padding: 1.5rem 2rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.6;
+  }
+
+  /* ── SERVICIO ETIQUETA (Del otro lado de la etiqueta) ── */
+  #servicio-etiqueta {
+    background: var(--grafito);
+    color: var(--crema);
+    padding: 7rem 7vw;
+  }
+  #servicio-etiqueta .section-label { color: var(--rosa); }
+  #servicio-etiqueta h2 { color: var(--crema); }
+#servicio-etiqueta h2 em { color: var(--rosa) !important; }
+  #servicio-etiqueta .serv-lead { color: #c8bdb5; }
+
+  .etiqueta-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 4rem;
+    align-items: start;
+    margin-top: 3rem;
+  }
+
+  .flow-steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 2rem 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    color: var(--rosa);
+  }
+  .flow-steps span.sep { color: #776a6f; }
+
+  .diag-box {
+    background: rgba(250,246,240,0.06);
+    border: 1px solid rgba(250,246,240,0.18);
+    padding: 2.25rem;
+  }
+  .diag-box h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--crema);
+    margin-bottom: 0.9rem;
+  }
+  .diag-box p { color: #c8bdb5; font-size: 0.98rem; line-height: 1.7; margin-bottom: 1.25rem; }
+  .diag-meta {
+    font-size: 1.52rem;
+    letter-spacing: 0.05em;
+    color: #a9979a;
+    margin-top: 1rem;
+  }
+
+  .btn-rosa {
+    display: inline-block;
+    background: var(--rosa);
+    color: var(--grafito);
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    padding: 1rem 2.2rem;
+    transition: background 0.25s;
+  }
+  .btn-rosa:hover { background: #e8556a; }
+
+  /* ── SERVICIO 2: COPY WEB + EMAIL ── */
+  #servicio2 {
+    padding: 7rem 7vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .s2-includes { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 2rem 0; }
+  .s2-tag {
+    font-size: 0.78rem;
+    font-weight: 500;
+    border: 1px solid var(--borgona);
+    color: var(--borgona);
+    padding: 0.4rem 1rem;
+  }
+
+  /* ── ECOSISTEMA (Blend + Podcast) ── */
+  #ecosistema {
+    background: var(--borgona);
+    color: var(--crema);
+    padding: 7rem 7vw;
+  }
+  #ecosistema .section-label { color: var(--rosa); }
+  #ecosistema > .eco-intro {
+    max-width: 640px;
+    margin-bottom: 4rem;
+  }
+  #ecosistema > .eco-intro h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 3.5vw, 2.9rem);
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  #ecosistema > .eco-intro h2 em { font-style: italic; color: var(--rosa); }
+  #ecosistema > .eco-intro p {
+    margin-top: 1.25rem;
+    font-size: 1.02rem;
+    color: rgba(250,246,240,0.82);
+    line-height: 1.8;
+  }
+
+  .eco-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  .eco-card {
+    background: rgba(250,246,240,0.06);
+    border: 1px solid rgba(250,246,240,0.18);
+    padding: 2.25rem;
+  }
+  .eco-card img {
+    width: 100%;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    background: rgba(250,246,240,0.1);
+  }
+  .eco-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+  }
+  .eco-card p { font-size: 0.98rem; color: rgba(250,246,240,0.82); line-height: 1.7; margin-bottom: 1.25rem; }
+
+  .eco-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--crema);
+    border-bottom: 1px solid var(--rosa);
+    padding-bottom: 2px;
+  }
+  .eco-link:hover { color: var(--rosa); }
+
+  /* ── DIFERENCIAL ── */
+  #diferencial { padding: 7rem 7vw; background: var(--crema); }
+  #diferencial .dif-header { text-align: center; max-width: 650px; margin: 0 auto 4rem; }
+  #diferencial h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 3.8vw, 3rem);
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  #diferencial h2 em { font-style: italic; color: var(--borgona); }
+  #diferencial .dif-sub { font-size: 0.98rem; color: #777; line-height: 1.7; }
+
+  .dif-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border: 1px solid var(--arena);
+  }
+  .dif-item {
+    padding: 2.75rem 2.25rem;
+    border-right: 1px solid var(--arena);
+    border-bottom: 1px solid var(--arena);
+  }
+  .dif-item:nth-child(3n) { border-right: none; }
+  .dif-item:nth-child(4), .dif-item:nth-child(5), .dif-item:nth-child(6) { border-bottom: none; }
+  .dif-icon { width: 32px; height: 2px; background: var(--borgona); margin-bottom: 1.4rem; }
+  .dif-item h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--borgona);
+    margin-bottom: 0.7rem;
+  }
+  .dif-item p { font-size: 0.98rem; font-weight: 300; line-height: 1.75; color: #666; }
+
+  /* ── CTA FINAL ── */
+  #cta-final {
+    background: var(--grafito);
+    padding: 7rem 7vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  .cta-left h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.3rem, 4.5vw, 3.6rem);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--crema);
+    margin-bottom: 1.75rem;
+  }
+  .cta-left h2 em { font-style: italic; color: var(--rosa); }
+  .cta-left p {
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.85;
+    color: #c8bdb5;
+    max-width: 480px;
+  }
+
+  .cta-right { display: flex; flex-direction: column; gap: 2rem; }
+  .cta-btn-wrap { display: flex; flex-direction: column; gap: 1rem; align-items: flex-start; }
+  .btn-large {
+    display: inline-block;
+    background: var(--rosa);
+    color: var(--grafito);
+    font-size: 0.92rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    padding: 1.2rem 2.8rem;
+    transition: background 0.25s;
+  }
+  .btn-large:hover { background: #e8556a; }
+  .cta-note { font-size: 0.85rem; font-weight: 400; color: #999; }
+
+  .cta-social { display: flex; gap: 1.25rem; margin-top: 0.5rem; }
+  .cta-social a { color: rgba(250,246,240,0.55); display: flex; transition: color 0.2s; }
+  .cta-social a:hover { color: var(--rosa); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--borgona);
+    color: rgba(250,246,240,0.75);
+    padding: 2.5rem 7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: var(--crema);
+  }
+  footer p { font-size: 0.85rem; }
+  footer a { color: rgba(250,246,240,0.75); text-decoration: none; font-size: 0.85rem; }
+  footer a:hover { color: var(--crema); }
+
+  .mobile-menu {\n    display: none;\n    position: fixed;\n    top: 4.55rem;\n    left: 0;\n    right: 0;\n    z-index: 99;\n    background: rgba(250,246,240,0.98);\n    border-bottom: 1px solid var(--arena);\n    padding: 1.25rem 6vw 1.5rem;\n    box-shadow: 0 8px 24px rgba(44,44,44,0.08);\n  }\n  .mobile-menu.open { display: flex; flex-direction: column; gap: 1rem; }\n  .mobile-menu a {\n    font-size: 0.95rem;\n    font-weight: 500;\n    text-decoration: none;\n    color: var(--grafito);\n    padding: 0.35rem 0;\n  }\n  .mobile-menu a:hover { color: var(--borgona); }\n\n  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .nav-link, .nav-social { display: none; }
+    .nav-menu-btn { display: block; }
+
+    #hero { grid-template-columns: 1fr; }
+    .hero-right { display: none; }
+    .hero-left { padding: 5rem 6vw 3.5rem; }\n    .hero-audit-btn { margin-top: 0.75rem; }
+
+    #problema, #mirada, #servicio1, #servicio2, #cta-final {
+      grid-template-columns: 1fr; gap: 3rem; padding: 4.5rem 6vw;
+    }
+    .serv-right-img { display: none; }
+
+    .etiqueta-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    #servicio-etiqueta { padding: 4.5rem 6vw; }
+
+    .ayudo-grid { grid-template-columns: 1fr; gap: 2.25rem; }
+    #como-ayudo { padding: 4.5rem 6vw; }
+
+    .eco-grid { grid-template-columns: 1fr; }
+    #ecosistema { padding: 4.5rem 6vw; }
+
+    .dif-grid { grid-template-columns: 1fr 1fr; }
+    .dif-item:nth-child(2n) { border-right: none; }
+    .dif-item:nth-child(3) { border-right: 1px solid var(--arena); }
+    .dif-item:nth-child(5), .dif-item:nth-child(6) { border-bottom: none; }
+    .dif-item:nth-child(4) { border-bottom: 1px solid var(--arena); }
+    #diferencial { padding: 4.5rem 6vw; }
+  }
+
+  @media (max-width: 600px) {
+    body { font-size: 16.5px; }
+    .dif-grid { grid-template-columns: 1fr; }
+    .dif-item { border-right: none !important; }
+    .flow-steps { font-size: 0.8rem; }
+  }
+
+/* Final visual corrections */
+.serv-tag,
+.serv-tag-item,
+.s2-tag {
+  font-size: 0.78rem !important;
+  line-height: 1.2 !important;
+}
+.serv-lead {
+  font-size: 1rem !important;
+}
+.btn-rosa {
+  font-size: 0.88rem !important;
+}
+#servicio-etiqueta h2 em {
+  color: var(--rosa) !important;
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Desi Romano</a>
+  <div class="nav-right">
+    <a href="#servicio1" class="nav-link">Servicios</a>
+    <a href="#ecosistema" class="nav-link">Podcast</a>
+    <div class="nav-social">
+      <a href="https://www.instagram.com/desiromano_ok/?hl=es" target="_blank" aria-label="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/desiree-romano-copywriter-mujeres" target="_blank" aria-label="LinkedIn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+    </div>
+    <a href="#cta-final" class="nav-cta">Agenda una charla conmigo</a>
+    <button class="nav-menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Copywriter del Vino · Comunicación estratégica · Vino &amp;Mujeres </p>
+    <h1 class="hero-title">Sos la mujer detrás de cada etiqueta<br><em>Llegó la hora de que reconozcan tu firma</em></h1>
+    <div class="hero-divider"></div>
+    <p class="hero-body">
+      Trabajo con sommeliers, enólogas y bodegueras en un espacio de comunicación propio, que no depende de un solo canal.
+
+Ahí tu historia se convierte en la razón por la que alguien elige tu proyecto con el vino — y gestionar tu negocio se vuelve más liviano.
+    </p>
+    <a href="#cta-final" class="btn-primary">Agendemos una conversación</a>
+    <p class="hero-note">Hay un lugar de tu negocio que todavía no mirate de cerca. Te lo muestro en el Diagnóstico de Continuidad, acá abajo.</p>
+<p class="hero-note">Cada evento es una oportunidad: recomendaciones, reservas, ventas. Sostenerla tiene un momento exacto, y no es el mismo para todas. Mirá cuál es el tuyo.</p>
+
+<p class="hero-note">5 preguntas · 3 minutos · Vas a saber exactamente dónde podés fortalecer tu seguimiento.</p>
+
+<p class="hero-note">Recorré tu último evento de una manera honesta, con otros ojos.</p>
+  </div>
+ <a href="#cta-final" class="btn-primary">AUDITAR MI POST EVENTO GRATIS</a>
+
+  <div class="hero-right">
+    <img src="images/hero-desi-romano.jpg" alt="Desi Romano" onerror="this.style.background='#e8ddd0'; this.removeAttribute('src')">
+    <div class="hero-right-overlay">
+      <p class="hero-quote">"Salír de atrás de las etiquetas, es una invitación a mostrar la conexión que hay entre vos y el alma del vino."</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEMA -->
+<section id="problema">
+  <div class="problema-left">
+    <p class="section-label label-reveal">Mujeres del vino</p>
+    <h2>¿Por qué conocemos tantas etiquetas y tan pocas historias de las mujeres<br><em>detrás de ellas?</em></h2>
+  </div>
+  <div class="problema-right">
+    <p>Como sommelier, enóloga, productora o bodeguera llevás años tomando decisiones y construyendo tu proyecto del vino, con un criterio propio. Pero cuando llega el momento de decir quién sos y por qué deberían elegirte, dudás.</p>
+    <p>Esa duda está lejos de tu capacidad profesional. Sin embargo, sentís pudor cuando tenés que mostrar tu recorrido de forma abierta. Muchas veces minimizás tus logros, postergás oportunidades o sentís incomodidad ante el reconocimiento que te ganaste con años de trabajo.</p>
+    <p class="pull-quote">Ya es hora de que tu experiencia sea reconocida y nombrada, sin sentirte forzada cuando decís quién sos.Te invito a que descubras tu propia forma de habitar tu proyecto del vino, y a amigarte con la idea de que sos merecedora del reconocimiento y la elección de quienes admiran tu trabajo.</p>
+    <a href="#mirada" class="btn-primary">Quiero trabajar mi historia con el vino</a>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>Salír de atrás de la etiqueta</span>
+    <span>Es invitarte a la experiencia de sentir que merecés tener un nombre propio</span>
+    <span>Comunicación estratégica para las mujeres del vino</span>
+    <span>Salí de atrás de la etiqueta</span>
+    <span>Ocupaá tú lugar en la industria del vino</span>
+    <span>Comunicación estratégica para las mujeres del vino</span>
+  </div>
+</div>
+
+<!-- MI MIRADA -->
+<section id="mirada">
+  <div class="mirada-img-wrap">
+    <img src="images/desi-mendoza.jpg" alt="Desi Romano en Mendoza" onerror="this.style.background='#e8ddd0'">
+    <div class="mirada-img-caption">Desi Romano</div>
+  </div>
+  <div class="mirada-right">
+    <p class="section-label label-reveal">¿Por qué me dedico a las Mujeres del vino y su historia con él?</p>
+    <h2>Hice un viaje a Mendoza y me<br><em>obsesioné con una pregunta</em></h2>
+    <p>¿Por qué conocemos tanto de etiquetas y vinos, y tan poco de las mujeres que están detrás de cada proyecto?</p>
+    <p>Esa pregunta cambió mi mirada profesional. Empecé a ver el espacio que hay entre el trabajo real de una mujer y el reconocimiento que recibe por él.
+Encontré enólogas, sommeliers y mujeres arriesgadas que confiaron su proyecto a otras profesionales — todas construyendo un legado sin que nadie supiera su nombre.
+Sommeliers con años de criterio, presentándose con timidez. Productoras que no sabían cómo contar lo que hacían sin sentirse presumidas. Mujeres enormes, con una historia de superación que casi nadie conoce.
+Ahí entendí mi trabajo: no es hablar del vino. Es ser el puente entre tu historia y tu negocio, y traducir ese puente en comunicación.
+Abrirse camino en esta industria puede ser una tarea solitaria. Por eso te acompaño a armar tu espacio propio, y convertir tu historia con el vino, en legado. Para que cuando otra mujer lo intente, recuerde que ya existieron mujeres como vos que le abrieron el camino.
+Hoy son miles las mujeres del vino que tienen un amor enorme por su trabajo, sostienen proyectos y equipos, muchas veces, lo hacen en soledad. Son grandes Mujeres con una historia real de superación que la mayoría desconoce.</p>
+    <div class="pull-quote"> Cuando las conocí, entendí que mi trabajo no es hablar del vino. Es acompañar a esas mujeres, que como vos, se dedican al negocio del vino, a convertir su historia y su criterio en reconocimiento.</div>
+    <p>Por eso necesitás contar con una estructura que te permita delegar la comunicación sin perderte en el camino: que tu historia se convierta en legado, para que otra mujer que recién empieza sepa que ya hubo alguien que le abrió el camino.</p>
+  </div>
+</section>
+
+<!-- COMO PUEDO AYUDAR -->
+<section id="como-ayudo">
+  <p class="section-label label-reveal">¿Ya sabés quién va a acompañarte a resolver las nuevas necesidades de tu proyecto del vino?</p>
+  <h2>Tres formas de trabajar juntas, según<br><em>desde dónde estés parada hoy.</em></h2>
+  <div class="ayudo-grid">
+    <div class="ayudo-card reveal">
+      <h3>01 — Salí de atrás de la etiqueta, Ordená tu voz</h3>
+      <p>Si sabés bien qué decir sobre el vino, pero no tenés idea cómo hablar de vos: trabajamos tu voz de marca desde cero.</p>
+    </div>
+    <div class="ayudo-card reveal" style="transition-delay:0.1s">
+      <h3>02 — Del Otro lado de las etiquetas</h3>
+      <p>Si tu principal ingreso con tu proyecto del vino, viene de la organización de catas o ferias, las conversaciones que se generan ahí, son el corazón de tu negocio. Por eso si se enfrían cuando termina el evento, perdés oportunidades de reservas, recomendaciones y ventas. Del otro lado de la etiqueta, es un espacio para ordenar tu seguimiento post-evento. Y construir vínculos que te permitan hacer crecer tu negocio.</p>
+    </div>
+    <div class="ayudo-card reveal" style="transition-delay:0.2s">
+      <h3>03 — Tu viñedo digital</h3>
+      <p>Tener todo tu negocio armado en Instagram, es un gran riesgo que estás corriendo. Porque una red social, funciona como vidriera, podés mostrar quién sos y qué hacés. Pero depositar sólo en ella todo tu contenido, puede hacerte perder años de trabajo, cuando por algún extraño motivo perdés la cuenta. Ahí sólo resta llorar. Y empezar de cero.</p> 
+
+ <p>Por eso, si ya tenés un negocio armado, es hora de que pongas todo lo que conseguiste, en un lugar seguro. Te acompaño a armar una web que te identifique, mails comuniquen tu proyecto y un ecositema que te permita tener tiempo disponible. La web, hace tu tarea de mantener activo el negoci, liberando tiempo para que inviertas donde lo necesites. Tus consumidores, te buscan, te encuentran y se contactan con vos. Charlemos y armamos esas piezas juntas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIO 1: ASESORÍA -->
+<section id="servicio1">
+  <div class="serv-left">
+    <span class="serv-tag">Asesoría Salí de atrás de la etiqueta</span>
+    <h2>Voz de marca para mujeres<br><em>del vino</em></h2>
+    <p class="serv-lead">Si buscás encontrar tu voz dentro de la industria. Acá descubrís qué querés decir, cómo querés decirlo y desde qué lugar querés crecer. Trabajamos desde tu experiencia real y tu historia con el vino.</p>
+
+    <div class="serv-tags-list">
+      <span class="serv-tag-item">Posicionamiento</span>
+      <span class="serv-tag-item">Marca personal</span>
+      <span class="serv-tag-item">Narrativa profesional</span>
+      <span class="serv-tag-item">Mensajes de marca</span>
+      <span class="serv-tag-item">Estrategia de contenidos</span>
+    </div>
+
+    <p class="pull-quote">Tu comunicación mostra quién sos dentro de la industria y qué diferencia tiene tu mirada. Trabajar en tu voz, te permite aliviar la carga que sentís cuando comunicás: hablás con soltura y tomás decisiones con seguridad, y eso se nota.</p>
+
+    <a href="#cta-final" class="btn-outline">Quiero trabajar mi voz dentro del vino</a>
+  </div>
+  <div class="serv-right-img">
+    <img src="images/asesoria-voz-marca.jpg" alt="Asesoría de voz de marca" onerror="this.style.background='#e8ddd0'; this.style.minHeight='500px'">
+    <div class="serv-accent-text">
+      "Cuando tenés una voz trabajada, aparece la claridad sobre qué comunicar y publicar tu contenido se vuelve un placer."
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIO: DEL OTRO LADO DE LA ETIQUETA -->
+<section id="servicio-etiqueta">
+  <span class="serv-tag" style="background:var(--rosa); color:var(--grafito);">Del otro lado de la etiqueta</span>
+  <h2>Cuando el evento termina<br><em>la conversación apenas está comenzando</em></h2>
+  <p class="serv-lead" style="max-width:640px;">Este es mi servicio pensado para sommeliers, enólogas, bodegueras y profesionales que hacen catas, ferias o experiencias de vino.</p>
+
+  <div class="etiqueta-grid">
+    <div>
+      <p style="color:#c8bdb5; font-size:1.02rem; line-height:1.85; margin-bottom:1rem;">En cada evento hay personas interesadas, que ya te están diciendo que sí a vos, aunque no lo notes. Es en esas conversaciones que se generan, donde se intercambian contactos, y se habla con personas que pueden convertirse en posibles clientes . Pero cuando termina el evento, esas conversaciones suelen desaparecer y el negocio vuelve a empezar de cero.</p>
+      <p style="color:#c8bdb5; font-size:1.02rem; line-height:1.85;">"Del otro lado de la etiqueta" te ayuda a que ese momento posterior al evento, lo transformes en nuevas oportunidades de negocio. Recomendacions, reservas y ventas que se concretan, porque no desaparecés. Sostenés tu presencia, más allá de la noche puntual. Una persona que te recuerda, es un cliente en potencia.</p>
+
+      <div class="flow-steps">
+        <span>Evento</span><span class="sep">→</span>
+        <span>Contacto</span><span class="sep">→</span>
+        <span>Presencia</span><span class="sep">→</span>
+        <span>Conversación</span><span class="sep">→</span>
+        <span>Posible venta</span>
+      </div>
+
+      <p style="color:#c8bdb5; font-size:1.02rem; line-height:1.85;">El sistema está pensado para no abrumar: ni al posible cliente, ni a vos. Armamos un QR que invita a prolongar la experiencia del evento. Un forma sutil, donde a cambio de su contacto, se llevan un recurso descargable y deseable. Luego sigue la secuencia de mails, con contenido relacionado con la experiencia, para que la conversación siga viva después de que vos dejás de estar frente a la persona. Sin forzar las ventas. Lográs que reserven, recomienden y compren tus servicios otus vinos. Porque se da un vínculo genuino, sin fricción. Estás presente en la mente de tus consumidores, siempre.</p>
+    </div>
+
+    <div class="diag-box">
+      <h3>Pero antes, es importante que sepas ¿Dónde se está enfriando tu contacto?</h3>
+      <p>Te dejo un diagnóstico breve para detectar en qué punto exacto se pierden los vínculos, con los consumidores que ya te dijeron que sí.</p>
+      <a href="https://desireewinewriter.github.io/diagnostico-post-evento" target="_blank" class="btn-rosa">Veamos el post evento, gratis</a>
+      <p class="diag-meta">5 preguntas · 3 minutos · sin compromiso</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIO 2: COPY WEB + EMAIL -->
+<section id="servicio2">
+  <div class="s2-left">
+    <span class="serv-tag">Todo negocio, necesita su Viña: Copy para web + email</span>
+    <h2>Piezas que comunican<br><em>cuando vos no estás</em></h2>
+    <p class="serv-lead">Cuando tu voz ya es clara y reconocible, necesitás que se refleje en tu negocio. Los activos digitales,son como la vid y el terroir, sin ellos, no hay vino posible. Por eso, son una parte fundamental para que los consumidores te encuentren. Y cuando lo hagan, deben verte reflejada ahí: por eso trabajar en tu web, páginas de venta, mails y secuencias, con alguien que te conozca y conozca tu sector, te permite crear un sitio siga hablando con tu voz, incluso cuando no estés explicándolo en persona.</p>
+
+    <div class="s2-includes">
+      <span class="s2-tag">Web</span>
+      <span class="s2-tag">Páginas de venta</span>
+      <span class="s2-tag">Email marketing</span>
+      <span class="s2-tag">Secuencias</span>
+      <span class="s2-tag">Narrativa comercial</span>
+    </div>
+
+    <p class="pull-quote">Escribir los textos, es sólo el final. El verdadero trabajo, es construir juntas una comunicación que permita que tu sitio, respire tu presencia.</p>
+
+
+    <a href="https://calendly.com/desiromano/sali_detras_de_la_etiqueta" target="_blank" rel="noopener" class="btn-outline">Charlemos sobre tus piezas digitales</a>
+  </div>
+  <div class="serv-right-img">
+    <img src="images/copy-web-email.jpg" alt="Mujer del vino trabajando en su comunicación digital" onerror="this.style.background='#e8ddd0'; this.style.minHeight='500px'">
+  </div>
+</section>
+
+<!-- ECOSISTEMA: PODCAST + BLEND -->
+<section id="ecosistema">
+  <div class="eco-intro">
+    <p class="section-label label-reveal">Mi ecosistema</p>
+    <h2>Trabajo → mirada →<br><em>conversación → comunidad</em></h2>
+    <p>Además de mis servicios, creé dos espacios donde mi mirada sobre el sector, y las Mujeres del vino, sigue viva: el podcast: "mujeres detrás de las etiquetas" que le da voz a mujeres del vino y a sus historias con él, y una experiencia presencial que pretende derribar las barreras de los tecnicismos, y abre el espacio para conversar entre colegas y consumidoras, que tienen historias en otros sectores y buscan en el vino un vehículo para conectar y disfrutar.</p>
+  </div>
+
+  <div class="eco-grid">
+    <div class="eco-card reveal">
+      <img src="images/podcast-cover.jpg" alt="Podcast Muejeres detrás de las etiquetas" onerror="this.style.background='rgba(250,246,240,0.1)'">
+      <h3>Podcast: Salí de atrás de la etiqueta</h3>
+      <p>Cada 15 días, historias en primera persona de las mujeres que construyen la industria del vino: liderazgo, decisiones y desafíos reales, contados con sus en primera persona, a través de entrevistas.</p>
+      <a href="https://open.spotify.com" target="_blank" class="eco-link">Escuchar en Spotify →</a>
+    </div>
+    <div class="eco-card reveal" style="transition-delay:0.1s">
+      <img src="images/blend-sin-etiquetas.jpg" alt="Blend Sin Etiquetas" onerror="this.style.background='rgba(250,246,240,0.1)'">
+      <h3>Blend Sin Etiquetas</h3>
+      <p>Una experiencia presencial con vinos seleccionados, de bodegas dirigidas por mujeres, para abrir las conversaciones que aún faltan entre nosotras. Los cupos son limitados, y el acceso es con invitación.</p>
+      <a href="#cta-final" class="eco-link">Quiero recibir mi invitación →</a>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAL -->
+<section id="diferencial">
+  <div class="dif-header">
+    <p class="section-label label-reveal" style="justify-content:center; display:block; text-align:center;">Por qué trabajar conmigo</p>
+    <h2>El vino, vos<br><em>y yo, nos entendemos</em></h2>
+    <p class="dif-sub">Olvidate de las fórmulas mágicas y las soluciones genéricas. Juntas, trabajamos desde el conocimiento real de la industria y de las mujeres que la sostienen.</p>
+  </div>
+
+  <div class="dif-grid">
+    <div class="dif-item reveal">
+      <div class="dif-icon"></div>
+      <h3>Conozco el mundo del vino</h3>
+      <p>Conozco el funcionamiento de industria, y eso te ahorra explicaciones y nos permite llegar rápido a lo que necesitás resolver.</p>
+    </div>
+    <div class="dif-item reveal" style="transition-delay:0.1s">
+      <div class="dif-icon"></div>
+      <h3>Ser influencer es muy distinto de ser referente</h3>
+      <p>Primero lo urgente. Analizamos, qué necesitás comunicar, a quién y desde qué lugar. El trabajo se enfoca en tus objetivos concretos.</p>
+    </div>
+    <div class="dif-item reveal" style="transition-delay:0.2s">
+      <div class="dif-icon"></div>
+      <h3>El respeto por el proceso</h3>
+      <p>Para mi la honestidad y confianza, son la base de mi negocio. Por eso creé un espacio seguro donde está permitido dudar, acomodarte y contar quién sos, además de qué hacés, sin sentirte juzgada. Es un lugar de escucha y calidéz.</p>
+    </div>
+    <div class="dif-item reveal" style="transition-delay:0.1s">
+      <div class="dif-icon"></div>
+      <h3>Sos única, y tu proyecto también</h3>
+      <p>Partimos de tu trayectoria y tu forma de entender el vino. Por eso, rompemos los moldes, y creamos una comunicación que hable de vos.</p>
+    </div>
+    <div class="dif-item reveal" style="transition-delay:0.2s">
+      <div class="dif-icon"></div>
+      <h3>Tu sello personal</h3>
+      <p>En un mundo, donde la comunicación suena, cada vez más, intercambiable con la de otra profesional del sector, vas a darle lugar a tu personalidad. Quién te conoce en persona, va a encotrar tu escencia en cada rincón de tu comunicación digital.</p>
+    </div>
+    <div class="dif-item reveal" style="transition-delay:0.3s">
+      <div class="dif-icon"></div>
+      <h3>Tu legado</h3>
+      <p>El vino es cultura y tu trabajo tiene una historia. Contarla de manera fiel, y utilizarla para hacer crecer tu negocio del vino, es inspiración para las mujeres que vienen atrás; por eso merecen conocerla.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="cta-final">
+  <div class="cta-left">
+    <p class="section-label" style="color:var(--rosa);">El próximo paso</p>
+    <h2>Tu nombre pesa tanto<br>como <em>tu etiqueta</em></h2>
+    <p>Tenés recorrido y experiencia. Cómo comunicás ese recorrido es lo que define cómo sigue creciendo tu negocio. Charlemos sobre tu próximo paso en el mundo del vino.</p>
+  </div>
+  <div class="cta-right">
+    <div class="pull-quote on-dark">
+      La conversación está pendiente. Mirá dónde estás hoy y cuál es el paso siguiente, para que tus clientes te encuentren fácil y te reconozcan.
+    </div>
+    <div class="cta-btn-wrap">
+      <a href="https://calendly.com/desiromano/sali_detras_de_la_etiqueta" target="_blank" class="btn-large">Agendemos una charla</a>
+      <p class="cta-note">Sin compromiso · Por Zoom · 30 minutos</p>
+    </div>
+    <div class="cta-social">
+      <a href="https://instagram.com/desiromano_ok/?hl=es" target="_blank" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/desiree-romano-copywriter-mujeres" target="_blank" aria-label="LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="https://open.spotify.com" target="_blank" aria-label="Spotify">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo">Desi Romano</span>
+  <p>Copywriter del vino · Comunicación estratégica para mujeres de la industria</p>
+  <a href="mailto:copydesireeromano@gmail.com">copydesireeromano@gmail.com</a>
+</footer>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal, .label-reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), 60);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => observer.observe(el));
+
+  // menú mobile simple: hace scroll y muestra links en un alert-free toggle
+  const menuBtn = document.querySelector('.nav-menu-btn');
+  if (menuBtn) {
+    menuBtn.addEventListener('click', () => {
+      document.querySelector('.nav-cta').scrollIntoView({behavior:'smooth'});
+    });
+  }
+</script>
+</body>
+</html>
