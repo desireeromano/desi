@@ -291,7 +291,7 @@
   #problema h2 em { font-style: italic; color: var(--rosa); }
 
   .problema-right p {
-    font-size: 1.75rem;
+    font-size: 1.15rem;
     font-weight: 300;
     line-height: 1.8;
     color: #c8bdb5;
@@ -367,7 +367,7 @@
     padding: 6rem 7vw;
     text-align: center;
   }
-  #como-ayudo .section-label { text-align: center; }
+  #como-ayudo .section-label { justify-content: center; }
   #como-ayudo h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(1.9rem, 3.4vw, 2.7rem);
@@ -406,7 +406,7 @@
 
   .serv-tag {
     display: inline-block;
-    font-size: 0.78rem;
+    font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -426,7 +426,7 @@
   #servicio1 h2 em, #servicio-etiqueta h2 em, #servicio2 h2 em { font-style: italic; color: var(--borgona); }
 
   .serv-lead {
-    font-size: 1rem;
+    font-size: 1.75rem;
     font-weight: 300;
     line-height: 1.85;
     color: #555;
@@ -435,7 +435,7 @@
 
   .serv-tags-list { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2.5rem; }
   .serv-tag-item {
-    font-size: 0.78rem;
+    font-size: 1.75rem;
     font-weight: 500;
     letter-spacing: 0.02em;
     border: 1px solid var(--borgona);
@@ -464,7 +464,6 @@
   }
   #servicio-etiqueta .section-label { color: var(--rosa); }
   #servicio-etiqueta h2 { color: var(--crema); }
-#servicio-etiqueta h2 em { color: var(--rosa) !important; }
   #servicio-etiqueta .serv-lead { color: #c8bdb5; }
 
   .etiqueta-grid {
@@ -513,7 +512,7 @@
     display: inline-block;
     background: var(--rosa);
     color: var(--grafito);
-    font-size: 0.88rem;
+    font-size: 1.85rem;
     font-weight: 600;
     letter-spacing: 0.03em;
     text-decoration: none;
@@ -533,7 +532,7 @@
 
   .s2-includes { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 2rem 0; }
   .s2-tag {
-    font-size: 0.78rem;
+    font-size: 1.85rem;
     font-weight: 500;
     border: 1px solid var(--borgona);
     color: var(--borgona);
@@ -708,14 +707,14 @@
   footer a { color: rgba(250,246,240,0.75); text-decoration: none; font-size: 0.85rem; }
   footer a:hover { color: var(--crema); }
 
-  .mobile-menu {\n    display: none;\n    position: fixed;\n    top: 4.55rem;\n    left: 0;\n    right: 0;\n    z-index: 99;\n    background: rgba(250,246,240,0.98);\n    border-bottom: 1px solid var(--arena);\n    padding: 1.25rem 6vw 1.5rem;\n    box-shadow: 0 8px 24px rgba(44,44,44,0.08);\n  }\n  .mobile-menu.open { display: flex; flex-direction: column; gap: 1rem; }\n  .mobile-menu a {\n    font-size: 0.95rem;\n    font-weight: 500;\n    text-decoration: none;\n    color: var(--grafito);\n    padding: 0.35rem 0;\n  }\n  .mobile-menu a:hover { color: var(--borgona); }\n\n  /* ── RESPONSIVE ── */
+  /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
     .nav-link, .nav-social { display: none; }
     .nav-menu-btn { display: block; }
 
     #hero { grid-template-columns: 1fr; }
     .hero-right { display: none; }
-    .hero-left { padding: 5rem 6vw 3.5rem; }\n    .hero-audit-btn { margin-top: 0.75rem; }
+    .hero-left { padding: 5rem 6vw 3.5rem; }
 
     #problema, #mirada, #servicio1, #servicio2, #cta-final {
       grid-template-columns: 1fr; gap: 3rem; padding: 4.5rem 6vw;
@@ -745,24 +744,6 @@
     .dif-item { border-right: none !important; }
     .flow-steps { font-size: 0.8rem; }
   }
-
-/* Final visual corrections */
-.serv-tag,
-.serv-tag-item,
-.s2-tag {
-  font-size: 0.78rem !important;
-  line-height: 1.2 !important;
-}
-.serv-lead {
-  font-size: 1rem !important;
-}
-.btn-rosa {
-  font-size: 0.88rem !important;
-}
-#servicio-etiqueta h2 em {
-  color: var(--rosa) !important;
-}
-
 </style>
 </head>
 <body>
@@ -782,7 +763,7 @@
       </a>
     </div>
     <a href="#cta-final" class="nav-cta">Agenda una charla conmigo</a>
-    <button class="nav-menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+    <button class="nav-menu-btn" aria-label="Abrir menú">☰</button>
   </div>
 </nav>
 
@@ -804,8 +785,8 @@ Ahí tu historia se convierte en la razón por la que alguien elige tu proyecto 
 <p class="hero-note">5 preguntas · 3 minutos · Vas a saber exactamente dónde podés fortalecer tu seguimiento.</p>
 
 <p class="hero-note">Recorré tu último evento de una manera honesta, con otros ojos.</p>
+    <a href="#cta-final" class="btn-outline" style="margin-top:0.5rem;">AUDITAR MI POST EVENTO GRATIS</a>
   </div>
- <a href="#cta-final" class="btn-primary">AUDITAR MI POST EVENTO GRATIS</a>
 
   <div class="hero-right">
     <img src="images/hero-desi-romano.jpg" alt="Desi Romano" onerror="this.style.background='#e8ddd0'; this.removeAttribute('src')">
@@ -960,7 +941,7 @@ Hoy son miles las mujeres del vino que tienen un amor enorme por su trabajo, sos
     <p class="pull-quote">Escribir los textos, es sólo el final. El verdadero trabajo, es construir juntas una comunicación que permita que tu sitio, respire tu presencia.</p>
 
 
-    <a href="https://calendly.com/desiromano/sali_detras_de_la_etiqueta" target="_blank" rel="noopener" class="btn-outline">Charlemos sobre tus piezas digitales</a>
+    <a href="https://calendly.com/desiromano/sali_detras_de_la_etiqueta" target="_blank" class="btn-outline">Charlemos sobre tus piezas digitales</a>
   </div>
   <div class="serv-right-img">
     <img src="images/copy-web-email.jpg" alt="Mujer del vino trabajando en su comunicación digital" onerror="this.style.background='#e8ddd0'; this.style.minHeight='500px'">
