@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El vinito incómodo · Suscribite</title>
+<meta name="description" content="Un mail para sommeliers que quieren construir una base de clientes que las elija por quiénes son.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#f3e1eb;
+    --cream-deep:#e3ddcf;
+    --charcoal:#2C2C2C;
+    --coral:#FB6376;
+    --coral-deep:#e14f62;
+    --wine:#6B2737;
+    --wine-deep:#551e2b;
+    --white:#FFFFFF;
+    --serif:'Cormorant Garamond', serif;
+    --sans:'TT Hoves','Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--charcoal);
+    font-family:var(--sans);
+    font-size:18px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  ::selection{background:var(--coral);color:var(--white);}
+
+  .wrap{max-width:760px;margin:0 auto;padding:0 28px;}
+
+  /* ---------- Header ---------- */
+  header{padding:26px 0;border-bottom:1px solid rgba(107,39,55,0.12);}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;max-width:920px;}
+  .brand-word{
+    font-family:var(--sans);
+    font-size:13px;
+    letter-spacing:.18em;
+    color:var(--wine);
+    font-weight:600;
+    text-decoration:none;
+    text-transform:uppercase;
+  }
+  .brand-word span{color:var(--coral);}
+  header nav a{
+    text-decoration:none;
+    font-size:14px;
+    letter-spacing:.04em;
+    color:var(--charcoal);
+    border:1px solid var(--wine);
+    padding:10px 20px;
+    border-radius:999px;
+    transition:background .2s ease,color .2s ease;
+    white-space:nowrap;
+  }
+  header nav a:hover{background:var(--wine);color:var(--cream);}
+
+  /* ---------- Hero ---------- */
+  .hero{padding:88px 0 40px;text-align:center;}
+  .eyebrow{
+    font-size:13px;
+    letter-spacing:.28em;
+    text-transform:uppercase;
+    color:var(--coral);
+    font-weight:600;
+    margin:0 0 22px;
+  }
+  h1{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:clamp(34px,5.4vw,58px);
+    line-height:1.12;
+    color:var(--wine);
+    margin:0 0 28px;
+    letter-spacing:-0.01em;
+  }
+  .hero-lead{font-size:19px;color:#4a4a4a;max-width:600px;margin:0 auto;}
+
+  /* ---------- Formulario ---------- */
+  .form-card{
+    background:var(--white);
+    border-radius:20px;
+    padding:44px 36px;
+    margin:40px 0 0;
+    box-shadow:0 18px 40px -24px rgba(107,39,55,.35);
+  }
+  .form-card h2{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:clamp(26px,3.6vw,34px);
+    color:var(--wine);
+    line-height:1.2;
+    margin:0 0 8px;
+    text-align:center;
+  }
+  .form-card .sub{text-align:center;color:#4a4a4a;margin:0 0 28px;font-size:16px;}
+
+  .field{margin:0 0 18px;}
+  .field label{
+    display:block;
+    font-size:13px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    font-weight:600;
+    color:var(--wine);
+    margin:0 0 8px;
+  }
+  .field input{
+    width:100%;
+    font-family:var(--sans);
+    font-size:17px;
+    color:var(--charcoal);
+    background:var(--cream);
+    border:1.5px solid transparent;
+    border-radius:12px;
+    padding:15px 18px;
+    transition:border-color .2s ease,background .2s ease;
+  }
+  .field input::placeholder{color:#8a7a80;}
+  .field input:focus{outline:none;border-color:var(--coral);background:var(--white);}
+  .field input:focus-visible{outline:2px solid var(--wine);outline-offset:2px;}
+
+  .btn{
+    display:block;
+    width:100%;
+    background:var(--coral);
+    color:#4a1b28;
+    font-family:var(--sans);
+    font-weight:600;
+    font-size:16px;
+    letter-spacing:.02em;
+    border:0;
+    cursor:pointer;
+    padding:17px 34px;
+    border-radius:999px;
+    transition:transform .18s ease,background .18s ease;
+    box-shadow:0 10px 24px -10px rgba(251,99,118,.55);
+    margin-top:8px;
+  }
+  .btn:hover{transform:translateY(-2px);background:var(--coral-deep);}
+  .btn:disabled{opacity:.6;cursor:wait;transform:none;}
+  .fine{margin:16px 0 0;font-size:13px;color:#7a6a70;text-align:center;line-height:1.5;}
+
+  .gracias{display:none;text-align:center;padding:12px 0;}
+  .gracias h2{margin-bottom:12px;}
+  .gracias p{margin:0;color:#3a3a3a;}
+  .is-sent .form-fields{display:none;}
+  .is-sent .gracias{display:block;}
+
+  .error{display:none;margin:14px 0 0;text-align:center;font-size:15px;color:var(--wine-deep);}
+
+  /* ---------- Qué vas a recibir ---------- */
+  section{padding:56px 0 0;}
+  .features{background:var(--wine);border-radius:18px;padding:44px 36px;}
+  .features h3{
+    font-size:13px;
+    letter-spacing:.24em;
+    text-transform:uppercase;
+    color:var(--coral);
+    font-weight:600;
+    margin:0 0 26px;
+  }
+  .feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 28px;list-style:none;margin:0;padding:0;}
+  .feature-grid li{display:flex;gap:12px;align-items:flex-start;color:var(--cream);font-size:16px;line-height:1.45;}
+  .feature-grid .ico{
+    flex:none;width:30px;height:30px;border-radius:50%;
+    background:rgba(251,99,118,.18);color:var(--coral);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--serif);font-weight:700;font-size:15px;
+  }
+  .features-note{margin:28px 0 0;color:rgba(243,225,235,.8);font-size:16px;font-style:italic;font-family:var(--serif);}
+
+  .pull-quote{
+    font-family:var(--serif);
+    font-style:italic;
+    font-size:26px;
+    color:var(--wine);
+    text-align:center;
+    line-height:1.35;
+    max-width:600px;
+    margin:0 auto;
+  }
+
+  /* ---------- Footer ---------- */
+  footer{padding:48px 0 60px;text-align:center;}
+  footer .brand-word{display:block;margin-bottom:6px;}
+  footer .tagline{font-family:var(--serif);font-style:italic;color:var(--wine);font-size:18px;}
+  footer .links{margin-top:18px;font-size:14px;}
+  footer .links a{color:var(--wine);margin:0 10px;}
+  footer .legal{margin-top:22px;font-size:12px;color:#8a7a80;letter-spacing:.03em;}
+
+  .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+
+  @media (max-width:640px){
+    .feature-grid{grid-template-columns:1fr;}
+    header nav a{padding:9px 16px;font-size:13px;}
+    .hero{padding:56px 0 24px;}
+    .form-card{padding:32px 22px;}
+    .features{padding:32px 24px;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .btn{transition:none;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand-word" href="#">El vinito <span>incómodo</span></a>
+    <nav><a href="https://www.instagram.com/desiromano_ok/">Instagram</a></nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Newsletter para viníferas</p>
+      <h1>Una cata no se improvisa. Se diseña.</h1>
+      <p class="hero-lead">Un mail para sommeliers que quieren armar una base de clientes que las elija por quiénes son, sin competir por precio.</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+
+    <!-- ═════════════ FORMULARIO ═════════════ -->
+    <div class="form-card" id="suscribite">
+
+      <div class="form-fields">
+        <h2>Sumate a las viníferas</h2>
+        <p class="sub">Dejame tu nombre y tu mail. El resto te llega con un vinito incluido.</p>
+
+        <!--
+          ⚠️ CONEXIÓN CON MAILERLITE
+          Reemplazá TU_ACTION_URL por el "action" del código HTML de tu formulario embebido
+          (empieza con https://assets.mailerlite.com/jsonp/...). Instrucciones en el chat.
+        -->
+        <form id="form-suscripcion" action="TU_ACTION_URL" method="post" target="ml-iframe">
+
+          <div class="field">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" name="fields[name]" placeholder="Cómo te llamás" autocomplete="given-name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="fields[email]" placeholder="tumail@ejemplo.com" autocomplete="email" required>
+          </div>
+
+          <!-- Campos que MailerLite necesita (no los borres) -->
+          <input type="hidden" name="ml-submit" value="1">
+          <input type="hidden" name="anticsrf" value="true">
+
+          <button class="btn" type="submit" id="btn-enviar">Quiero recibirlo</button>
+          <p class="error" id="msg-error" role="alert">Algo falló. Probá de nuevo o escribime por Instagram.</p>
+          <p class="fine">Sin spam, solo vino y estrategia. Podés abandonar la viña cuando quieras.</p>
+        </form>
+      </div>
+
+      <!-- Mensaje de éxito -->
+      <div class="gracias" id="gracias" role="status" aria-live="polite">
+        <h2>¡Salud, vinífera!</h2>
+        <p>Ya estás adentro. Revisá tu bandeja de entrada (y la carpeta de promociones o spam) por si hay que confirmar tu suscripción.</p>
+      </div>
+
+      <iframe name="ml-iframe" id="ml-iframe" class="sr-only" title="Respuesta del formulario" tabindex="-1" aria-hidden="true"></iframe>
+    </div>
+
+    <!-- ═════════════ QUÉ VAS A RECIBIR ═════════════ -->
+    <section>
+      <div class="features">
+        <h3>Qué vas a recibir</h3>
+        <ul class="feature-grid">
+          <li><span class="ico">✓</span><span>Ideas para diseñar catas y ferias que no dependan de llenar sala a último momento.</span></li>
+          <li><span class="ico">✓</span><span>Estrategias para quedarte con el contacto de tus invitados y volver a hablarles.</span></li>
+          <li><span class="ico">✓</span><span>Cómo construir tu identidad profesional más allá de la copa.</span></li>
+          <li><span class="ico">✓</span><span>Una pregunta incómoda por mail, para pensar tu negocio desde otro lado.</span></li>
+        </ul>
+        <p class="features-note">No te voy a enseñar más sobre vino. Te acompaño a armar la estructura de tu negocio.</p>
+      </div>
+    </section>
+
+    <section>
+      <p class="pull-quote">“Tu manera es tuya. Lo que necesitás es una estructura que te permita seguir en contacto.”</p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="brand-word">El vinito <span>incómodo</span></span>
+    <div class="tagline">Salí de atrás de la etiqueta</div>
+    <div class="links">
+      <a href="https://www.instagram.com/desiromano_ok/">Instagram</a>
+      <a href="https://open.spotify.com/episode/3F3FNArsI9E8hP3nXLemUY?si=e875373fd2304d70">Mujeres detrás de las etiquetas</a>
+    </div>
+    <div class="legal">© Desi Romano · Al suscribirte aceptás recibir mis emails.</div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var form = document.getElementById('form-suscripcion');
+  var iframe = document.getElementById('ml-iframe');
+  var card = document.getElementById('suscribite');
+  var btn = document.getElementById('btn-enviar');
+  var err = document.getElementById('msg-error');
+  var enviado = false;
+
+  // Si todavía no pegaste tu action URL, avisamos en lugar de fallar en silencio
+  form.addEventListener('submit', function (e) {
+    err.style.display = 'none';
+    if (form.getAttribute('action') === 'TU_ACTION_URL') {
+      e.preventDefault();
+      err.textContent = 'Falta pegar el action URL de MailerLite en el código.';
+      err.style.display = 'block';
+      return;
+    }
+    enviado = true;
+    btn.disabled = true;
+    btn.textContent = 'Enviando…';
+  });
+
+  // Cuando MailerLite responde dentro del iframe oculto, mostramos el mensaje de éxito
+  iframe.addEventListener('load', function () {
+    if (!enviado) return;
+    card.classList.add('is-sent');
+    document.getElementById('gracias').focus && document.getElementById('gracias').setAttribute('tabindex', '-1');
+    document.getElementById('gracias').focus();
+  });
+})();
+</script>
+</body>
+</html>
